@@ -15,8 +15,14 @@ function sendMeetLink() {
       startTime,
       endTime,
       {
-        description: '此 Google Meet 連結由系統自動化產生，請勿直接回覆此信。',
-        guests: 'example1@gmail.com,example2@gmail.com',
+        description: '此 Google Meet 連結由系統自動化產生，請勿直接回覆。',
+        
+        guests: [
+          'example-1@gmail.com',
+          'example-2@gmail.com',
+          'example-3@gmail.com'
+        ].join(','),
+        
         sendInvites: true
       }
     );
